@@ -31,6 +31,7 @@ form.addEventListener('submit', function (e) {
   }
 })
 
+// I had a hard time with this block and had to research on StackOverflow
 function removeFromStorage(itemToRemove) {
   for (let i = 0; i < todos.length; i++) {
     if (todos[i] === itemToRemove) {
