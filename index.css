@@ -1,0 +1,92 @@
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-color: #1f4882;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 75%;
+  margin: 60px auto;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  border: 2px solid #f7ba41;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  font-weight: 900;
+  color: #fff;
+}
+
+.fa-list {
+  padding-right: 10px;
+}
+
+.fa-square-plus {
+  font-size: 3.5rem;
+  color: #f7ba41;
+}
+
+.todo-add {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.todo-complete {
+  text-decoration: line-through 3px green;
+  color: green;
+}
+
+input[type='text'] {
+  min-width: 250px;
+  height: 35px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #1f4882;
+  padding: 5px 20px;
+  font-size: 15px;
+  font-weight: 900;
+  color: #1f4882;
+}
+
+.todo-list {
+  margin: 0;
+  padding-inline-start: 0px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px 10px 20px;
+  margin: 0px auto;
+  margin-top: 20px;
+  width: 70%;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 400;
+
+  /* Blur by Glassmorphism */
+  background: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.fa-square-xmark {
+  color: rgb(169, 50, 50);
+}
+
+li:last-child {
+  margin-bottom: 60px;
+}
